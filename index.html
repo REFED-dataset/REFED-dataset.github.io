@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Primary Meta Tags -->
+  <!-- TODO: Replace with your paper title and author names -->
+  <meta name="title" content="REFED Dataset">
+  <!-- TODO: Write a compelling 150-160 character description of your research -->
+  <meta name="description"
+    content="A Subject Real-time Dynamic Labeled EEG-fNIRS Synchronized Recorded Emotion Dataset">
+  <!-- TODO: Add 5-10 relevant keywords for your research area -->
+  <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
+  <!-- TODO: List all authors -->
+  <!-- <meta name="author" content="FIRST_AUTHOR_NAME, SECOND_AUTHOR_NAME"> -->
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+
+  <!-- Academic/Research Specific -->
+  <meta name="citation_title"
+    content="REFED: A Subject Real-time Dynamic Labeled EEG-fNIRS Synchronized Recorded Emotion Dataset">
+  <meta name="citation_publication_date" content="2025">
+  <meta name="citation_conference_title" content="NeurIPS 2025">
+
+  <!-- Additional SEO -->
+  <meta name="theme-color" content="#2563eb">
+  <meta name="msapplication-TileColor" content="#2563eb">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://ajax.googleapis.com">
+  <link rel="preconnect" href="https://documentcloud.adobe.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+
+  <!-- TODO: Replace with your paper title and authors -->
+  <title>REFED Dataset : A Subject Real-time Labeled EEG-fNIRS Emotion Dataset</title>
+
+  <!-- Favicon and App Icons -->
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link rel="apple-touch-icon" href="static/images/favicon.ico">
+
+  <!-- Critical CSS - Load synchronously -->
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <!-- Non-critical CSS - Load asynchronously -->
+  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+
+  <!-- Fallback for browsers that don't support preload -->
+  <noscript>
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  </noscript>
+
+  <!-- Fonts - Optimized loading -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Defer non-critical JavaScript -->
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script defer src="static/js/bulma-carousel.min.js"></script>
+  <script defer src="static/js/bulma-slider.min.js"></script>
+  <script defer src="static/js/index.js"></script>
+
+<body>
+
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Main content -->
+  <main id="main-content">
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <!-- TODO: Replace with your paper title -->
+              <h1 class="title is-2 publication-title .first-title">REFED: A Subject Real-time Dynamic Labeled EEG-fNIRS Synchronized
+                Recorded Emotion Dataset</h1>
+              <div class="is-size-5 publication-authors">
+                <!-- TODO: Replace with your paper authors and their personal links -->
+                <span class="author-block color-blue">
+                  <!-- <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <span class="author-block">
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a> -->
+                  Xiaojun&nbspNing<sup>1</sup>,
+                  Jing&nbspWang<sup>1,∗</sup>,
+                  Zhiyang&nbspFeng<sup>1</sup>,
+                  Tianzuo&nbspXin<sup>1</sup>,
+                  Shuo&nbspZhang<sup>1</sup>,
+                  Shaoqi&nbspZhang<sup>1</sup>,
+                  Zheng&nbspLian<sup>2</sup>,
+                  Yi&nbspDing<sup>3</sup>,
+                  Youfang&nbspLin<sup>1</sup>,
+                  Ziyu&nbspJia<sup>2,∗</sup>
+                </span>
+              </div>
+
+              <div class="is-size-5 publication-authors">
+                <!-- TODO: Replace with your institution and conference/journal info -->
+                <span class="author-block">
+                  <sup>1</sup>Beijing Jiaotong University<br>
+                  <sup>2</sup>Institute of Automation, Chinese Academy of Sciences<br>
+                  <sup>3</sup>Nanyang Technological University<br>
+                  <span style="font-weight:800">NeurIPS 2025</span>
+                </span>
+                <!-- TODO: Remove this line if no equal contribution -->
+                <span class="eql-cntrb"><small><br><sup>*</sup>Corresponding Authors</small></span>
+              </div>
+
+              <div class="column has-text-centered">
+                <div class="publication-links">
+                  <!-- TODO: Update with your arXiv paper ID -->
+                  <span class="link-block">
+                    <a href="https://neurips.cc/virtual/2025/poster/121785" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Paper</span>
+                    </a>
+                  </span>
+                  
+                  <!-- TODO: Replace with your GitHub repository URL -->
+                  <span class="link-block">
+                    <a href="https://huggingface.co/datasets/REFED2025/REFED" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <img style="height:16px" src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg">
+                      </span>
+                      <span>Dataset</span>
+                    </a>
+                  </span>
+
+                  <!-- TODO: Replace with your GitHub repository URL -->
+                  <span class="link-block">
+                    <a href="https://github.com/REFED-dataset/REFED-codes" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Code</span>
+                    </a>
+                  </span>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Teaser image/video-->
+    <section class="hero teaser">
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+          <!-- TODO: Replace with your teaser image/video -->
+          <img src="static/images/Figure_2.png" alt="[Figure]" loading="lazy" />
+          <!-- TODO: Replace with your image/video description -->
+          <h2 class="subtitle has-text-centered">
+            The EEG-fNIRS recording system and experiment paradigm overview.
+          </h2>
+        </div>
+      </div>
+    </section>
+    <!-- End teaser image/video -->
+
+    <!-- Paper abstract -->
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <!-- TODO: Replace with your paper abstract -->
+              <p class="abstract">
+                <b>Affective brain-computer interfaces (aBCIs)</b> play a crucial role in personalized human–computer interaction and neurofeedback modulation. 
+                To develop practical and effective aBCI paradigms and to investigate the spatial-temporal dynamics of brain activity under emotional inducement, 
+                portable <b>electroencephalography (EEG)</b> signals have been widely adopted. To further enhance spatial-temporal perception, <b>functional 
+                near-infrared spectroscopy (fNIRS)</b> has attracted increasing interest in the aBCI field and has been explored in combination with EEG. 
+                However, existing datasets typically provide only static fixation labels, overlooking <b>the dynamic changes in subjects' emotions</b>. Notably, 
+                some studies have attempted to collect continuously annotated emotional data, but they have recorded only peripheral physiological signals 
+                without directly observing brain activity, limiting insight into underlying neural states under different emotions. To address these challenges, 
+                we present the <b><u>Real-time labeled EEG-fNIRS Emotion Dataset (REFED)</u></b>. REFED simultaneously records brain signals from both EEG and fNIRS 
+                modalities while providing continuous, real-time annotations of valence and arousal. The results of the data analysis demonstrate the effectiveness 
+                of emotion inducement and the reliability of real-time annotation. This dataset offers the first possibility for studying the neural-vascular 
+                coupling mechanism under emotional evolution and for developing dynamic, robust affective BCIs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End paper abstract -->
+
+
+    <!-- License -->
+    <section class="section hero is-small">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">License</h2>
+            <div class="content has-text-justified">
+              <!-- TODO: Replace with your paper abstract -->
+              <p>
+                The REFED dataset and code are made available under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 (CC-BY-NC-SA 4.0) International License. 
+                Detailed license terms can be found at <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"> 
+                  https://creativecommons.org/licenses/by-nc-sa/4.0/ </a>.
+              </p>
+              <img alt="CC-BY-NC-SA 4.0" style="border-width:0"
+                src="http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-sa.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End License -->
+
+
+    <!--BibTex citation -->
+    <section class="section" id="BibTeX">
+      <div class="container is-max-desktop content">
+        <div class="bibtex-header">
+          <h2 class="title">BibTeX</h2>
+          <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
+            <i class="fas fa-copy"></i>
+            <span class="copy-text">Copy</span>
+          </button>
+        </div>
+        <pre id="bibtex-code"><code>@inproceedings{NEURIPS2025_REFED,
+  title = {REFED: A Subject Real-time Dynamic Labeled EEG-fNIRS Synchronized Recorded Emotion Dataset},
+  author = {Ning, Xiaojun and Wang, Jing and Feng, Zhiyang and Xin, Tianzuo and Zhang, Shuo and Zhang, Shaoqi and Lian, Zheng and Ding, Yi and Lin, Youfang and Jia, Ziyu},
+  booktitle = {The Thirty-Ninth Annual Conference on Neural Information Processing Systms},
+  year = {2025}
+}
+</code></pre>
+      </div>
+    </section>
+    <!--End BibTex citation -->
+
+
+    <footer class="footer">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-8">
+            <div class="content">
+
+              <p>
+                This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                  target="_blank">Academic Project Page Template</a> which was adopted from the <a
+                  href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+                You are free to borrow the source code of this website, we just ask that you link back to this page in
+                the footer. <br> This website is licensed under a <a rel="license"
+                  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                  Commons Attribution-ShareAlike 4.0 International License</a>.
+              </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Statcounter tracking code -->
+    <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0YD6LYQQ75"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-0YD6LYQQ75');
+    </script>
+
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?e848a372323acc8bf2b49402a8057498";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "tplrlety8l");
+    </script>
+
+    <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=2d78ad&w=350&t=tt&d=0gZLIVc5_gvqZww_cAu21Phu1AjAg0j2nwmtkMWkXD0&co=ffffff&ct=2d78ad'></script>
+    <!-- End of Statcounter Code -->
+
+</body>
+
+</html>
